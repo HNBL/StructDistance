@@ -15,6 +15,7 @@ class Program
         Distance d1;
         Distance d2;
         Distance z;
+        Distance z2;
         Console.WriteLine("Ведите значние Фута ");
         d1.feet = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Ведите значние Дюйма ");
@@ -26,12 +27,13 @@ class Program
         d2.inch = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Ведите значние Дюйма ");
 
-        int newF = (d1.feet + d2.feet) + (d1.inch + d2.inch) / 12;
-        int newI = (d1.inch + d2.inch) % 12;
+
+         z.Sum = (d1.feet + d2.feet) + (d1.inch + d2.inch) / 12;
+        z2.Sum = (d1.inch + d2.inch) % 12;
         
         
         
-        Console.WriteLine(" Результат {0}' - {1}\"",newF, newI);
+        Console.WriteLine(" Результат {0}' - {1}\"",z.Sum, z2.Sum);
 
         Console.Read();
     }
